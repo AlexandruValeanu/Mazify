@@ -35,7 +35,7 @@ python3 main.py play file-path='mazes/small.txt'
 There are 3 maze-solvers implemented:
 * ![Depth-first search maze-solver](https://github.com/AlexandruValeanu/Mazify/blob/master/solvers/dfs_solver.py)
 * ![Breadth-first search maze-solver](https://github.com/AlexandruValeanu/Mazify/blob/master/solvers/bfs_solver.py)
-* ![A* maze-solver](https://github.com/AlexandruValeanu/Mazify/blob/master/solvers/astar_solver.py)
+* ![A* graph-search maze-solver](https://github.com/AlexandruValeanu/Mazify/blob/master/solvers/astar_solver.py)
 
 ###  Key controls
 * z  -> Highlight current location
