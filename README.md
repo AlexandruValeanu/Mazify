@@ -9,6 +9,7 @@ python3 main.py create rows=10 columns=20 file-path='mazes/small'
 ```
 
 ![small maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/small.png)
+![big maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big.png)
 
 ### Solving a maze
 ```python
