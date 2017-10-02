@@ -16,6 +16,10 @@ python3 main.py create rows=10 columns=20 file-path='mazes/small'
 python3 main.py solve 'start=(1,1)' 'end=(7,6)' file-path='mazes/small.txt'
 ```
 
+![small maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/small_sol.png)
+![big maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big_sol.png)
+![big maze dfs](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big_sol_dfs.png)
+
 ### Playing a game
 ```python
 python3 main.py play file-path='mazes/small.txt'
