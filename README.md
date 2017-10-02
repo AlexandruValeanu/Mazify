@@ -8,6 +8,9 @@ There is also a game module written using Pygame if you'd like to see how fast c
 python3 main.py create rows=10 columns=20 file-path='mazes/small'
 ```
 
+![small maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/small.png)
+![big maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big.png)
+
 ### Solving a maze
 ```python
 python3 main.py solve 'start=(1,1)' 'end=(7,6)' file-path='mazes/small.txt'
