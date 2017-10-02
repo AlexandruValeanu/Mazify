@@ -7,16 +7,22 @@ There is also a game module written using Pygame if you'd like to see how fast c
 ```python
 python3 main.py create rows=10 columns=20 file-path='mazes/small'
 ```
-
 ![small maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/small.png)
+
+```python
+python3 main.py create rows=100 columns=200 file-path='mazes/big'
+```
 ![big maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big.png)
 
 ### Solving a maze
 ```python
 python3 main.py solve 'start=(1,1)' 'end=(7,6)' file-path='mazes/small.txt'
 ```
-
 ![small maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/small_sol.png)
+
+```python
+python3 main.py solve 'start=(34,19)' 'end=(76,163)' file-path='mazes/big.txt'
+```
 ![big maze](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big_sol.png)
 ![big maze dfs](https://github.com/AlexandruValeanu/Mazify/blob/master/mazes/big_sol_dfs.png)
 
