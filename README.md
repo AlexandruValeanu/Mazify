@@ -28,7 +28,7 @@ python3 main.py solve 'start=(34,19)' 'end=(76,163)' file-path='mazes/big.txt'
 
 ### Playing a game
 ```python
-python3 main.py play file-path='mazes/small.txt'
+python3 main.py play file-path='mazes/big.txt'
 ```
 ![game](https://github.com/AlexandruValeanu/Mazify/blob/master/Peek%202017-10-02%2012-14.gif)
 
