@@ -3,7 +3,7 @@ from matplotlib import colors
 import constants
 
 
-def draw_maze(maze, path=None, figsize=(10, 5), file_path=None):
+def draw_maze(maze, path=None, figsize=(20, 10), file_path=None):
     if path is None:
         path = []
 
