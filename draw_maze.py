@@ -23,9 +23,10 @@ def draw_maze(maze, path=None, figsize=(10, 5), file_path=None):
     pyplot.xticks([]), pyplot.yticks([])
 
     if file_path is not None:
-        pyplot.savefig(file_path)
-
-    pyplot.show()
+        pyplot.savefig(file_path + ".png")
+        maze.write_to_file(file_path + '.txt')
+    else:
+        pyplot.show()
 
 
 def ascii_representation(maze):

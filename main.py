@@ -20,7 +20,7 @@ def get_param(type):
 if sys.argv[1].startswith('create'):
     nrows = int(get_param('rows'))
     ncols = int(get_param('columns'))
-    filepath = get_param('file_path')
+    filepath = get_param('file-path')
 
     maze = Maze.create_maze(nrows, ncols)
     draw_maze(maze, file_path=filepath)
@@ -30,11 +30,11 @@ elif sys.argv[1].startswith('solve'):
     start = make_tuple(get_param('start'))
     end = make_tuple(get_param('end'))
 
-    maze = Maze.load_from_file(get_param('file_path'))
+    maze = Maze.load_from_file(get_param('file-path'))
     path = astar_solver.solve_maze(maze, start, end)
     draw_maze(maze, path)
 elif sys.argv[1].startswith('play'):
-    game.run_game(sys.argv[2])
+    game.run_game(get_param('file-path'))
 elif sys.argv[1] == 'help':
     print('Key controls')
     print('z    Highlight current location')
