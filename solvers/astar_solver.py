@@ -36,6 +36,7 @@ def solve_maze(maze, start, end, print_info=False):
                     dist[(a, b)] = dist[current] + 1
                     parent[(a, b)] = current
                     heapq.heappush(queue, (h((a, b), end) + dist[current] + 1, (a, b)))
+                    print(queue)
 
     if print_info:
         print("Distance:", dist[end])
