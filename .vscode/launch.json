@@ -10,12 +10,10 @@
             "request": "launch",
             "program": "${file}",
             "args": [
-                "rows",
-                "10",
-                "columns",
-                "10",
-                "file-path",
-                "new"
+                "create",
+                "rows","10",
+                "columns", "20",
+                "file-path","new"
             ],
             "console": "integratedTerminal"
         },
@@ -23,7 +21,7 @@
             "name": "Python: Current File with UserName arg",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
+            "program": "create rows=10 columns=20 file-path=new",
             "args": [
                 "${env:USERNAME}"
             ],
