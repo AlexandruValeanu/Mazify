@@ -46,7 +46,7 @@ def run_game(filename, start=None, end=None):
                 start = (a, b)
                 end = (c, d)
                 break
-
+                    
     current = start
 
     # Define some colors
