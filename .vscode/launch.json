@@ -5,25 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch and Debug",
+            "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "args": [
                 "create",
-                "rows","10",
-                "columns", "20",
-                "file-path","new"
-            ],
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Python: Current File with UserName arg",
-            "type": "python",
-            "request": "launch",
-            "program": "create rows=10 columns=20 file-path=new",
-            "args": [
-                "${env:USERNAME}"
+                "rows=10",
+                "columns=20",
+                "file-path=new"
             ],
             "console": "integratedTerminal"
         }
