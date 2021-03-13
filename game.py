@@ -46,7 +46,7 @@ def run_game(filename, start=None, end=None):
                 start = (a, b)
                 end = (c, d)
                 break
-                    
+
     current = start
 
     # Define some colors
@@ -83,7 +83,8 @@ def run_game(filename, start=None, end=None):
     clock = pygame.time.Clock()
 
     # grid of colors
-    color_grid = [[WHITE for column in range(maze.ncolumns)] for row in range(maze.nrows)]
+    color_grid = [[WHITE for column in range(
+        maze.ncolumns)] for row in range(maze.nrows)]
 
     start_time = datetime.now()
 
@@ -98,7 +99,7 @@ def run_game(filename, start=None, end=None):
                 root = tk.Tk()
                 root.withdraw()
 
-                if messagebox.askyesno('Verify', 'Really quit?'):
+                if messagebox.askyesno('Verify', 'Do you really want to quit?'):
                     done = True  # Flag that we are done so we exit this loop
                 else:
                     messagebox.showinfo('No', 'Quit has been cancelled')
@@ -137,7 +138,8 @@ def run_game(filename, start=None, end=None):
                 break
 
             while True:
-                x, y = randint(0, maze.nrows - 1), randint(0, maze.ncolumns - 1)
+                x, y = randint(0, maze.nrows - 1), randint(0,
+                                                           maze.ncolumns - 1)
 
                 if not maze.is_wall(x, y) and len(astar_solver.solve_maze(maze, current, (x, y))):
                     end = (x, y)
@@ -176,13 +178,16 @@ def run_game(filename, start=None, end=None):
         # Draw the grid
         for row in range(maze.nrows):
             for column in range(maze.ncolumns):
-                pygame.draw.rect(screen, color_grid[row][column], [WIDTH * column, HEIGHT * row, WIDTH, HEIGHT])
+                pygame.draw.rect(screen, color_grid[row][column], [
+                                 WIDTH * column, HEIGHT * row, WIDTH, HEIGHT])
 
         if keys[pygame.K_z]:
-            pygame.draw.circle(screen, PURPLE, (WIDTH * current[1], HEIGHT * current[0]), 25)
+            pygame.draw.circle(
+                screen, PURPLE, (WIDTH * current[1], HEIGHT * current[0]), 25)
 
         if keys[pygame.K_x]:
-            pygame.draw.circle(screen, BLUE, (WIDTH * end[1], HEIGHT * end[0]), 25)
+            pygame.draw.circle(
+                screen, BLUE, (WIDTH * end[1], HEIGHT * end[0]), 25)
 
         if keys[pygame.K_c]:
             frame_rate -= 1
@@ -203,3 +208,6 @@ def run_game(filename, start=None, end=None):
 
     # Be IDLE friendly. If you forget this line, the program will 'hang' on exit.
     pygame.quit()
+
+
+run_game("new.txt")
